@@ -1,0 +1,26 @@
+{
+    "name": "Udemy Video Downloader",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "Simple chrome extension to download udemy videos.",
+    "page_action": {
+        "default_title": "Download the video from udemy"
+    },
+
+    "author": "draken wan",
+    "icons" : {
+        "128": "./images/logo.png"
+    },
+    "background" : {
+        "scripts": ["./js/events.js"]
+    },
+
+    "content_scripts" : [{
+        "matches": ["https://www.udemy.com/*"],
+        "js": ["./js/content.js"]
+    }],
+
+    "homepage_url": "https://www.github.com/drakenwan",
+    "permissions": ["tabs", "declarativeContent","<all_urls>","activeTab"]
+}
