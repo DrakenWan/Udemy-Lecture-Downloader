@@ -21,6 +21,6 @@
         "js": ["./js/content.js"]
     }],
 
-    "homepage_url": "https://www.github.com/drakenwan",
+    "homepage_url": "https://www.github.com/drakenwan/Udemy-Lecture-Downloader",
     "permissions": ["tabs", "declarativeContent","<all_urls>","activeTab"]
 }
