@@ -17,7 +17,7 @@
     },
 
     "content_scripts" : [{
-        "matches": ["https://www.udemy.com/*"],
+        "matches": ["https://www.udemy.com/*", "https://www.coursera.org/*"],
         "js": ["./js/content.js"]
     }],
 
