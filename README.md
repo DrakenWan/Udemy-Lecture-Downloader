@@ -4,3 +4,7 @@
  Seriously, it isn't much of a big deal. But to be honest, I found it quite useful to use.
  
  If there are any issues that arise while making use of it please do inform me.
+
+Works on following websites:-
+* [coursera](https://www.coursera.org)
+* [udemy](https://www.udemy.com)
