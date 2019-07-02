@@ -4,10 +4,20 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse)
  {
     if(msg.todo == "download_video")
     {
-        var video = document.getElementsByClassName("vjs-tech");
+        var edx = "https://courses.edx.org/courses/*";
+        var others = "vjs-tech";
+        var video = null;
+
+        if(RegExp(edx).exec(location.href).length >= 1)
+        {
+            var video = document.getElementsByClassName("video-download-button");
+        } else {
+            video = document.getElementsByClassName(others);
+        }
+        
         if(video.length != 0) {
              video = video[0];
-             var src = video.getAttribute("src");
+             var src = video.getAttribute("src") || video.getAttribute("href");
              if(confirm("Confirm download the lecture?"))
              {
                 window.open(src, "_blank");
